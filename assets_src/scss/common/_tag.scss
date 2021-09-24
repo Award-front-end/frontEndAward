@@ -1,0 +1,22 @@
+.tag{
+    display: inline-block;
+    font-size: 12px;
+    color: #fff;
+    line-height: 15px;
+    font-weight: 800;
+    padding: 4px 9px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    &.yellow{
+        background: $yellow;
+    }
+    &.green{
+        background: $green;
+    }
+    &.black-79{
+        background: $black-79;
+    }
+    &.grey-9A{
+        background: $grey-9A;
+    }
+} 

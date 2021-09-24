@@ -1,0 +1,45 @@
+.custom-table {
+    position: relative;
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 1px;
+        background: #fff;
+    }
+    table {
+        width: 100%;
+    }
+    tbody {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap:0 30px;
+        tr {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid $grey-f2;
+            padding: 12px 0;
+            td {
+                &.count-detail {
+                    color: $yellow;
+                    font: 20px/28px "Muli-bold";
+                    &.aucun {
+                        font-family: "Muli-light";
+                    }
+                    @include max(1680px) {
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+                }
+                strong {
+                    font-size: 18px;
+                    color: $grey-2B;
+                }
+            }
+        }
+    }
+}

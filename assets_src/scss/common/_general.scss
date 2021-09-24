@@ -1,0 +1,42 @@
+body{
+    font-family: "Muli-Regular";
+    overflow-x: hidden;
+    margin: auto 0;
+    width: 100%;
+}
+
+.container{
+    max-width: 1540px;
+    margin: auto;    
+    @include max(1700px){
+        max-width: 1440px;
+    }
+    @include max(1580px){
+        max-width: 1240px;
+    }
+    @include max(1440px){
+        max-width: 1140px;
+    }
+    @include max(1280px){
+        max-width: 960px;
+    }
+    @include max(992px){
+       max-width: 100%;
+       padding: 0 30px;
+    }
+    @include max(575px){
+        padding: 0 15px;
+    }
+}
+
+.content{
+    padding-top: 100px;
+}
+
+.block{
+    &.full-width{
+        width: 100%;
+    }
+}
+
+

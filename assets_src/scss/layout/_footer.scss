@@ -1,0 +1,62 @@
+.footer{
+    background: $yellow;
+    padding: 6px 40px;
+    @include max(1280px){
+        padding: 5px 20px;
+    }
+    .footer-block{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include max(575px){
+            flex-direction: column;
+        }
+        .footer-text{
+            font-size: 12px;
+            line-height:15px;
+            color:$grey-60;
+            font-family: 'Muli-Light';
+            @include max(575px){
+                text-align: center;
+            }
+            .footer-title {
+                color: #040404;
+                margin-right: 3px;
+            }
+            strong{
+                font-family: 'Muli-Regular';
+                font-weight: 900;
+            }
+            a{
+                text-decoration: underline;
+                color:$dark-red;
+            }
+        }
+
+        .logo-block{
+            max-width: 65px;
+            display: flex;
+            @include max(767px){
+                max-width: 55px;
+            }
+            img{
+                width: 100%;
+            }
+        }
+
+        .ico-heart-pulse{
+            display: inline-block;
+            padding:0 4px;
+            color:$dark-red;
+            font-size: 10px;
+        }
+
+        .footer-col{
+            @include max(575px){
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+        }
+
+    }
+}

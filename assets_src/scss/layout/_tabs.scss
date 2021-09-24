@@ -1,0 +1,210 @@
+/*Tab promotions*/
+.tab-standard-block{
+    .tab-promotions-nav{
+        display: flex;
+        align-items: flex-end;
+        li{
+            position: relative;
+            .btn-white{
+                font-size: 20px;
+                line-height: 29px;
+                padding: 8px 30px;
+                background: #fff;
+                text-transform: initial;
+                border-bottom: 2px solid $grey-d9;   
+                // position: relative;
+                @include max(1440px){
+                    font-size: 17px;
+                    line-height: 26px;
+                    padding: 6px 26px;
+                }
+                .tab-title{
+                    color: $black-79;
+                }   
+                .tab-notification{
+                    font-size: 18px;
+                    color: $grey-2B;
+                    line-height: 26px;
+                    margin-left: 5px;
+                    @include max(1440px){
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+                }
+                &::before{
+                    content: "";
+                    display: none;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    height: 100%;
+                    width: 2px;
+                    background: $grey-d9;
+                }
+                &::after{
+                    content: "";
+                    display: none;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    height: 100%;
+                    width: 2px;
+                    background: $grey-d9;
+                }
+            }
+            &:before{
+                content: "";
+                display: block;
+                opacity: 0;
+                position: absolute;
+                top: 2px;
+                left: 2px;
+                width: calc(100% - 4px);
+                height: 4px;
+                background: $yellow;
+                transition: opacity 0.3s ease;
+                z-index: 1;
+            }
+            &:hover{
+                &::before{
+                    opacity: 1;
+                    transition: opacity 0.3s ease;
+                }
+                .btn-white{    
+                    border-bottom: 2px solid #fff;
+                    border-top: 2px solid $grey-d9;
+                    &:before, &:after{
+                        display: inline-block;
+                    }
+                }
+                .tab-title{
+                    text-shadow: 0 0 .65px $grey-2B, 0 0 .65px $grey-2B;
+                    color:$grey-2B;
+                }  
+            }
+            &.tab-active{
+                &::before{
+                    opacity: 1;
+                    transition: width 0.3s ease;
+                }
+                .btn-white{
+                    border-bottom: 2px solid #fff;
+                    border-top: 2px solid $grey-d9;
+                    &:before, &:after{
+                        display: inline-block;
+                    }
+                }
+                .tab-title{
+                    font-family: "Muli-Bold";
+                    color:$grey-2B;
+                }  
+            }
+            &.disabled{
+                border-bottom: none;
+                .btn-white{
+                    pointer-events: none;
+                    background: $grey-d9;
+                }
+                &::before{
+                    opacity: 0;
+                    transition: width 0.3s ease;
+                }
+                .tab-title{
+                    font-family: "Muli-Regular";
+                    color:$black-79;
+                }
+                &:hover{
+                    &::before{
+                        opacity: 0;
+                    }
+                    .btn-white{    
+                        border-bottom: 2px solid $grey-d9;
+                        border-top: 2px solid $grey-d9;
+                        &:before, &:after{
+                            display: none;
+                        }
+                    }
+                    .tab-title{
+                        text-shadow: none;
+                        color:$black-79;
+                    }  
+                }  
+            }
+        }
+    }
+    .tabsP-stage{
+        border-top: 2px solid $grey-d9;
+        margin-top: -2px;
+        .tab-content{
+            padding-top: 22px;
+        }
+        .tab-descriptif{
+            font-size: 18px;
+            color: $grey-2B;
+            margin-bottom: 20px;
+            @include max(1440px){
+                font-size: 16px;
+                margin-bottom: 15px;
+            }
+            ol{
+                font-family: "Muli-Regular";
+                color: $grey-2B;
+                margin-bottom: 10px;
+                margin-left:22px;
+                counter-reset: item;
+                li{
+                    margin-bottom: 13px;
+                    font-size: 16px;
+                    line-height: 18px;
+                    @include max(1440px){
+                        font-size: 14px;
+                        line-height: 16px;
+                    }
+                    &:before {
+                        content: counter(item) ". ";
+                        counter-increment: item;
+                        color: $grey-2B;
+                        font-weight: 800;
+                    }
+                }
+            }
+            ul{
+                font-family: "Muli-Regular";
+                list-style: none;
+                font-size: 16px;
+                line-height: 18px;
+                margin-left: 20px;
+                margin-bottom: 20px;
+                @include max(1440px){
+                    font-size: 14px;
+                    line-height: 16px;
+                }
+                li{
+                    color: #000;
+                    margin-bottom: 10px;
+                    @include max(1440px){
+                        margin-bottom: 7px;
+                    }
+                    &:before{
+                        content:"●";
+                        display: inline-block;
+                        color: $grey-2B;
+                        font-size: 18px;
+                        margin-right: 10px;
+                        @include max(1440px){
+                            font-size: 15px;
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.tab-offres{
+        .tab-offre-top{
+            position: relative;
+        }
+    }
+}
+
+  

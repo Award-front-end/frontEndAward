@@ -1,0 +1,89 @@
+.dropdown-filter{
+    position: relative;
+   .btn-filter{
+        border: 1px solid $grey-e5;
+        padding: 6px 10px;
+        font-size: 16px;
+        position: relative;
+        min-height: 34px;
+        background: #fff;
+        cursor: pointer;
+        font-size: 16px;
+        display: flex;
+        font-family: "Muli-Regular";
+        min-width: 115px;
+        @include max(1440px){
+            font-size: 14px;
+            min-height: 28px;
+            padding: 4px 10px;   
+        }
+        &:before{
+            content: "";
+            display: inline-block;
+            background:$grey-9A;
+            width: 33px;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            @include max(1440px){
+                width: 27px;
+            }
+        }
+        &:after{
+            content:"";
+            position: absolute;
+            top: 15px;
+            right: 13px;
+            width: 0; 
+            height: 0; 
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+            border-top: 4px solid #fff;
+            @include max(1440px){
+                top: 12px;
+                right: 10px;
+            }
+        }
+   }
+   .dropdown-menu-filter{
+       display: none;
+       position: absolute;
+       top: 35px;
+       left: 0;
+       min-width: 100%;
+       border: 1px solid $grey-e5;
+       z-index: 10;
+       @include max(1440px){
+            top: 29px;
+       }
+       .dropdown-filter-item{
+            &.active{
+                a{
+                    background: $grey-9A;
+                    color:#fff; 
+                }
+            }
+       }
+       a{  
+            background: #fff;
+            padding: 0px 10px;
+            font-size: 16px;
+            min-height: 34px;
+            max-height: 34px;
+            align-items: center;
+            display: flex;
+            color: #000;
+            text-decoration: none;
+            @include max(1440px){
+                min-height: 28px;
+                max-height: 28px;
+                font-size: 14px;
+            }
+            &:hover{
+                background: $grey-9A;
+                color:#fff;
+            }
+       }
+   } 
+}

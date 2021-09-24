@@ -1,0 +1,108 @@
+.tableBlock{
+    max-height: 700px;
+    overflow-y: auto;
+    margin-bottom: 30px;
+    @include max(1440px){
+        max-height: 500px;
+    }
+    &::-webkit-scrollbar {
+        width: 10px;
+        @include max(1440px){
+            width: 8px;
+        }
+    }
+    &::-webkit-scrollbar:horizontal {
+        height: 10px;
+        @include max(1440px){
+            height: 8px;
+        }
+    }
+    &::-webkit-scrollbar-track {
+        background-color: $grey-f2;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: $grey-9A;
+    }
+}
+.table-standard{
+    th{
+        background: $grey-e5;
+        font-size: 22px;
+        line-height: 29px;
+        padding: 15px 45px;
+        font-family: "Muli-Extrabold";
+        position: sticky;
+        top: 0;
+        white-space: nowrap;
+        z-index: 2;
+        max-width: 300px!important;
+        min-width: 200px!important;
+        width: auto!important;
+        @include max(1440px){
+            font-size: 18px;
+            line-height: 25px;
+            padding: 15px 30px;
+            max-width: 250px!important;
+            min-width: 150px!important;
+        }
+    }
+    tbody{
+        tr{
+            border-bottom: 1px solid $grey-d9;
+            td{
+                font-size: 20px;
+                line-height: 29px;
+                color:$grey-2B;
+                padding: 15px 45px;
+                min-width: 200px!important;
+                max-width: 300px!important;
+                width: auto!important;
+                @include max(1440px){
+                    font-size: 16px;
+                    line-height: 23px;
+                    padding: 15px 30px;
+                    max-width: 250px!important;
+                    min-width: 150px!important;
+                }
+                &:first-child{
+                    background: $grey-f8;
+                    color:$black-79;
+                    white-space: nowrap;
+                    position: sticky;
+                    left: 0;
+                }
+            }
+        }
+    }
+    th, td{
+        &.col-large{
+            min-width: 300px;
+            max-width: 300px;
+            @include max(1440px){
+                min-width: 250px;
+                max-width: 250px;
+            }
+        }
+        &.col-medium{
+            min-width: 200px;
+            max-width: 300px;
+            @include max(1440px){
+                min-width: 150px;
+                max-width: 250px;
+            }
+        }
+        &.col-short{
+            min-width: 150px;
+            max-width: 150px;
+            @include max(1440px){
+                min-width: 100px;
+                max-width: 100px;
+            }
+        }
+    }
+    td{
+        &.col-short{
+            text-align: right;
+        }
+    }
+}

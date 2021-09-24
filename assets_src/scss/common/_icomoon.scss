@@ -1,0 +1,186 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon/icomoon.eot?4p4h8q');
+  src:  url('../fonts/icomoon/icomoon.eot?4p4h8q#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon/icomoon.ttf?4p4h8q') format('truetype'),
+    url('../fonts/icomoon/icomoon.woff?4p4h8q') format('woff'),
+    url('../fonts/icomoon/icomoon.svg?4p4h8q#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="ico-"]:before, [class*=" ico-"]:before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ico-check-green:before {
+  content: "\e928";
+  color: #00b0a9;
+}
+.ico-version:before {
+  content: "\e927";
+}
+.ico-open-tab:before {
+  content: "\e924";
+}
+.ico-tool:before {
+  content: "\e925";
+}
+.ico-play:before {
+  content: "\e926";
+}
+.ico-close-2:before {
+  content: "\e923";
+}
+
+.ico-bon-savoir:before {
+  content: "\e922";
+  color: #fddc04;
+}
+.ico-close .path1:before {
+  content: "\e91d";
+  color: rgb(255, 255, 255);
+}
+.ico-close .path2:before {
+  content: "\e91f";
+  margin-left: -1em;
+  color: rgb(154, 154, 154);
+}
+.ico-alert-circle:before {
+  content: "\e921";
+  color: #ffc117;
+}
+.ico-bulle:before {
+  content: "\e920";
+  color: #9a9a9a;
+}
+.ico-procedure:before {
+  content: "\e912";
+  color: #fad916;
+}
+.ico-tool-box-alert .path1:before {
+  content: "\e913";
+  color: rgb(253, 220, 4);
+}
+.ico-tool-box-alert .path2:before {
+  content: "\e914";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.ico-service-alert .path1:before {
+  content: "\e915";
+  color: rgb(253, 220, 4);
+}
+.ico-service-alert .path2:before {
+  content: "\e916";
+  margin-left: -0.8388671875em;
+  color: rgb(0, 0, 0);
+}
+.ico-promotion-alert .path1:before {
+  content: "\e917";
+  color: rgb(253, 220, 4);
+}
+.ico-promotion-alert .path2:before {
+  content: "\e918";
+  margin-left: -0.9599609375em;
+  color: rgb(0, 0, 0);
+}
+.ico-offre-alert .path1:before {
+  content: "\e919";
+  color: rgb(253, 220, 4);
+}
+.ico-offre-alert .path2:before {
+  content: "\e91a";
+  margin-left: -0.947265625em;
+  color: rgb(0, 0, 0);
+}
+.ico-tool-box .path1:before {
+  content: "\e91b";
+  color: rgb(255, 255, 255);
+}
+.ico-tool-box .path2:before {
+  content: "\e91c";
+  margin-left: -1em;
+  color: rgb(154, 154, 154);
+}
+.ico-message:before {
+  content: "\e91e";
+}
+.ico-edit-profil:before {
+  content: "\e911";
+}
+.ico-arrow-thin:before {
+  content: "\e90b";
+}
+.ico-arrow-simple:before {
+  content: "\e910";
+}
+.ico-download:before {
+  content: "\e90f";
+}
+.ico-heart-pulse:before {
+  content: "\e902";
+  color: #e53520;
+}
+.ico-eye-view:before {
+  content: "\e90c";
+}
+.ico-contractuel:before {
+  content: "\e90d";
+  color: #fad916;
+}
+.ico-pdf:before {
+  content: "\e90e";
+  color: #fddc04;
+}
+.ico-alert .path1:before {
+  content: "\e900";
+  color: rgb(0, 0, 0);
+}
+.ico-alert .path2:before {
+  content: "\e901";
+  margin-left: -1em;
+  color: rgb(252, 236, 139);
+}
+.ico-edit:before {
+  content: "\e903";
+  color: #b6b6b6;
+}
+.ico-heart:before {
+  content: "\e904";
+}
+.ico-home:before {
+  content: "\e905";
+  color: #9a9a9a;
+}
+.ico-note:before {
+  content: "\e906";
+  color: #b6b6b6;
+}
+.ico-notification:before {
+  content: "\e907";
+}
+.ico-search:before {
+  content: "\e908";
+  color: #9a9a9a;
+}
+.ico-star:before {
+  content: "\e909";
+  color: #e5e5e5;
+}
+.ico-star-full:before {
+  content: "\e90a";
+  color: #fddc04;
+}

@@ -1,0 +1,24 @@
+@mixin font($font-family, $font-file){
+    @font-face {
+        font-family: $font-family;
+        src: url('../fonts/'+$font-file+'.woff');
+    }
+}
+
+/*Declaration font Muli*/
+@include font('Muli-Black','Muli/Muli-Black');
+@include font('Muli-BlackItalic','Muli/Muli-BlackItalic');
+@include font('Muli-Bold','Muli/Muli-Bold');
+@include font('Muli-BoldItalic','Muli/Muli-BoldItalic');
+@include font('Muli-Italic','Muli/Muli-Italic');
+@include font('Muli-Light','Muli/Muli-Light');
+@include font('Muli-LightItalic','Muli/Muli-LightItalic');
+@include font('Muli-ExtraLight','Muli/Muli-ExtraLight');
+@include font('Muli-Extrabold','Muli/Muli-ExtraBold');
+@include font('Muli-ExtraLightItalic','Muli/Muli-ExtraLightItalic');
+@include font('Muli-SemiBold','Muli/Muli-SemiBold');
+@include font('Muli-SemiBoldItalic','Muli/Muli-SemiBoldItalic');
+@include font('Muli-Regular','Muli/Muli-Regular');
+
+/*Declaration font Icomoon*/
+@include font('icomoon','icomoon/icomoon');
